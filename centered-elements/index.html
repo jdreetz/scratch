@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+    body {
+        margin: 0;
+        padding:0;
+    }
+    .thumb_container {
+        position: absolute;
+        left:0;
+        top:0;
+        right: 0;
+        bottom:0;
+        border: solid 1px blue;
+        padding: 0;
+        background: #888;
+    }
+    .mov_thumb {
+        max-width: 480px;
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        top:0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .center_base{
+        position: absolute;
+        left: 0;
+        top:0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .vid_thumb {
+        max-width: 480px;
+        width:100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .vid_wrapper:before{
+      content: ' ';
+      background: rgba(0,0,0,.5);
+      border: 12px solid white;
+      left:0;
+      right: 0;
+      bottom:0;
+      top:0;
+      margin: auto;
+      position: absolute;
+      border-radius: 50%;
+      width:72px;
+      height: 72px;
+      z-index: 1000;
+      box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.33), 0 0 2px 0px rgba(0, 0, 0, 0.29);
+    }
+    .vid_wrapper {
+    }
+    </style>
+</head>
+
+<body>
+    <div class="vid_wrapper center_base">
+        <img class="vid_thumb center_base" src="http://eswalls.com/wp-content/uploads/2014/01/Widescreen_Green_hills_005252_.jpg"></img>
+    </div>
+    <!--  <div class="thumb_container">
+      <img class="mov_thumb"src="http://eswalls.com/wp-content/uploads/2014/01/Widescreen_Green_hills_005252_.jpg"></img>
+    </div> -->
+</body>
+
+</html>
